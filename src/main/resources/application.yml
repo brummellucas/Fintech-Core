@@ -10,20 +10,22 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/payment_gateway
     username: postgres
-    password: 1234
+    password: 1234 # CONFIRME SE ESTA É A SENHA DO SEU POSTGRES NO PGADMIN
     driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+    open-in-view: false # MELHORIA: Evita warnings e ganha performance
     properties:
       hibernate:
         format_sql: true
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+        # REMOVIDO: dialect (O Hibernate 6 já detecta automaticamente)
 
 app:
   security:
     jwt:
-      secret: ${JWT_SECRET:mySecretKeyForJWTTokenGenerationAndValidation2024}
-      expiration: 86400000 # 24 horas
+      # Use uma chave maior para evitar erros de validação no HS512
+      secret: ${JWT_SECRET:minhaChaveMuitoSecretaEExtremamenteLongaParaGarantirSeguranca2026_Gateway}
+      expiration: 86400000

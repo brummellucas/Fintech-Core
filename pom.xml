@@ -8,20 +8,17 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.0</version>
-        <relativePath/>
+        <version>3.2.1</version> <relativePath/>
     </parent>
 
     <groupId>com.gateway</groupId>
     <artifactId>payment-gateway</artifactId>
     <version>1.0.0</version>
     <name>payment-gateway</name>
-    <description>Gateway de Pagamentos Simulado</description>
 
     <properties>
-        <java.version>21</java.version>
+        <java.version>17</java.version>
         <jjwt.version>0.11.5</jjwt.version>
-        <logback.version>1.5.13</logback.version>
     </properties>
 
     <dependencies>
@@ -69,24 +66,20 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- Lombok -->
+        <!-- Lombok (com configuração correta) -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <optional>true</optional>
+            <scope>provided</scope> <!-- Alterado para provided -->
         </dependency>
 
-        <!-- Utilities -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-
+        <!-- Documentação API -->
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
             <version>2.3.0</version>
         </dependency>
+
         <!-- Test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
