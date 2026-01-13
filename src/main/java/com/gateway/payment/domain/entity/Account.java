@@ -32,10 +32,16 @@ public class Account {
         if (balance.compareTo(amount) < 0) {
             throw new IllegalArgumentException("Saldo insuficiente");
         }
+        if (amount.compareTo(BigDecimal.ZERO) <= 0) {
+            throw new IllegalArgumentException("Valor do débito deve ser positivo");
+        }
         this.balance = this.balance.subtract(amount);
     }
 
     public void credit(BigDecimal amount) {
+        if (amount.compareTo(BigDecimal.ZERO) <= 0) {
+            throw new IllegalArgumentException("Valor do crédito deve ser positivo");
+        }
         this.balance = this.balance.add(amount);
     }
 }
