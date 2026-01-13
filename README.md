@@ -376,9 +376,10 @@ payment-gateway/
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-**Desenvolvido com ❤️ por [Seu Nome]**  
-💼 **Perfil LinkedIn**: [linkedin.com/in/seu-perfil](https://www.linkedin.com/in/brummellucas/)  
-🐙 **GitHub**: [github.com/seu-usuario](https://github.com/brummellucas)
+## 👨‍💻 **Desenvolvido por** **Brummel Lucas Silva da Cunha** - Desenvolvedor.
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/brummellucas)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brummellucas/)
 
 ---
 *Este projeto foi desenvolvido para fins educacionais e de portfólio, simulando um ambiente real de desenvolvimento backend Java.*
